@@ -1,0 +1,25 @@
+{
+  "name": "vektr_renderinglib",
+  "version": "1.0.0",
+  "description": "Rendering lib for Vektr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vektr-libs/rendering.git"
+  },
+  "keywords": [
+    "ecosystem:AllexJS",
+    "vektr",
+    "rendering",
+    "lib"
+  ],
+  "author": "Luka Petrovic <lukapetrovicsi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vektr-libs/rendering/issues"
+  },
+  "homepage": "https://github.com/vektr-libs/rendering#readme"
+}
