@@ -1,4 +1,4 @@
-function createUse(lib,mathlib,mylib){
+function createUse(lib,mathlib,hierarchymixinslib,mylib){
   'use strict';
   var dummyUse = {
     id:'nullUse',
@@ -130,7 +130,7 @@ function createUse(lib,mathlib,mylib){
   Use.prototype.addChild = function(chld){
     //chld.__parent = this;
     this.set('usedObj',chld);
-    lib.Parent.prototype.addChild.call(this,chld);
+    hierarchymixinslib.Parent.prototype.addChild.call(this,chld);
   };
   Use.prototype.setIndexOnChild = function(chld){
     chld.__childindex = 0;

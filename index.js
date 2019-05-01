@@ -33,7 +33,7 @@ function createLib (execlib, utillib, commonlib, mathlib, storagelib, hierarchym
   require('./src/Shapecreator')(lib, ret);
   require('./src/Positionablecreator')(ret);
   require('./src/Areablecreator')(ret);
-  require('./src/Usecreator')(lib,mathlib, ret);
+  require('./src/Usecreator')(lib,mathlib, hierarchymixinslib, ret);
   require('./src/Pathcreator')(lib, ret);
   require('./src/Groupcreator')(lib, ret);
   require('./src/ClipPathcreator')(lib, ret);

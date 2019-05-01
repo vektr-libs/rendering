@@ -47,7 +47,7 @@ function createLib (execlib, utillib, commonlib, mathlib, storagelib, hierarchym
   require('./src/Shapecreator')(lib, ret);
   require('./src/Positionablecreator')(ret);
   require('./src/Areablecreator')(ret);
-  require('./src/Usecreator')(lib,mathlib, ret);
+  require('./src/Usecreator')(lib,mathlib, hierarchymixinslib, ret);
   require('./src/Pathcreator')(lib, ret);
   require('./src/Groupcreator')(lib, ret);
   require('./src/ClipPathcreator')(lib, ret);
@@ -1470,7 +1470,7 @@ function createText(lib,mylib){
 module.exports = createText;
 
 },{}],29:[function(require,module,exports){
-function createUse(lib,mathlib,mylib){
+function createUse(lib,mathlib,hierarchymixinslib,mylib){
   'use strict';
   var dummyUse = {
     id:'nullUse',
@@ -1602,7 +1602,7 @@ function createUse(lib,mathlib,mylib){
   Use.prototype.addChild = function(chld){
     //chld.__parent = this;
     this.set('usedObj',chld);
-    lib.Parent.prototype.addChild.call(this,chld);
+    hierarchymixinslib.Parent.prototype.addChild.call(this,chld);
   };
   Use.prototype.setIndexOnChild = function(chld){
     chld.__childindex = 0;
