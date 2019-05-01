@@ -1,6 +1,6 @@
 {
   "name": "vektr_renderinglib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rendering lib for Vektr",
   "main": "index.js",
   "scripts": {
